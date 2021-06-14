@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3bfa1f1d96.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Testing</title>
 </head>
 <body>
@@ -14,7 +15,9 @@
         <img class="logo" src="images/logo.jpeg" alt="">
         <button class="talk">Wanna talk?</button>
     </header>
-    <div class="main container-fluid">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="main container-fluid">
             <h1 class="title">A little Front-end Developer and Designer</h1>
             <div class="wrapper grid">
                 <div class="grid-item"><img class="avatar" src="images/avatar.jpg" alt=""></div>
@@ -26,16 +29,17 @@
         <img class="computer" src="images/computer.jpg" alt="">
     </div>
     <div class="blue container-fluid">
-<p class="intro">
+<p data-aos="zoom-in" data-aos-duration="1000" class="intro">
 I am a Student and i have just started my journey as a developer
 and im gonna try my best to keep going as far as i can 
 and helping as much people as i can in the way.
 I will try my best to make your websites to be as great as 
 they could get.</p>
 </div>
+<div  data-aos="fade-up">
 <div class="information">
     <div class="capable grid-item capabilities"><p>This is what i am capable of currently :
-        <div class="icon-wrapper"><div class="flex"><img class="icon" src="images/Html.png" alt="">
+        <div data-aos="zoom-in-right" class="icon-wrapper"><div class="flex"><img class="icon" src="images/Html.png" alt="">
         <img class="icon" src="images/css.png" alt=""></div>
         <img class="js icon" src="images/javascript .png" alt="">
     </div>
@@ -58,7 +62,9 @@ they could get.</p>
     </ul>
 </div> 
 </div>
+</div>
 <div class="credits blue">
+    <div data-aos="zoom-in-up" data-aos-duration="1000">
     <img class="white-logo" src="images/logo-white.png" alt="">
     <p class="credit-title">A Journey of Thousand miles starts with a Small step.</p>
     <a class="button" href=""><i class="fab fa-twitter"></i></a>
@@ -70,5 +76,10 @@ they could get.</p>
 
 </div>
 </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
